@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex assignment</title>
+</head>
+<body>
+ <script>
+    let text = "Do you know the book, 'Tales from Shakespare'?";
+    
+    const pattern = /(^|\W)'|'(\W]$)/g;
+
+    result = text.replace(pattern, '$1"$2');
+
+    console.log(result);
+
+ </script>   
+</body>
+</html>

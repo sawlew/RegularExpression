@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex assignment</title>
+</head>
+
+<body>
+    <script>
+        let string = prompt("Please enter a Number to check if it's a Javascript Number");
+
+        let pattern = /^[-+]?(\d+(\.\d*)?|\.\d+)([eE][-+]?\d+)?$/;
+        let matches = pattern.test(string);
+
+        if (matches === true) {
+            alert(`${string} is a valid Javascript Number`)
+        }
+        else {
+            alert(`${string} is not a valid Javascript number`)
+        }
+
+    </script>
+</body>
+
+</html>
